@@ -1,0 +1,2 @@
+/Users/eliotalderson/Dart/Flutter/expenseslist/expenseslist/android/app/.cxx/Debug/6a473q2m/x86_64/CMakeFiles/rebuild_cache.dir
+/Users/eliotalderson/Dart/Flutter/expenseslist/expenseslist/android/app/.cxx/Debug/6a473q2m/x86_64/CMakeFiles/edit_cache.dir
