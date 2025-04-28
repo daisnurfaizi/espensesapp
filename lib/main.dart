@@ -1,5 +1,6 @@
 import 'package:expenseslist/widgets/expenses.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 var kColorScheme = ColorScheme.fromSeed(
   seedColor: const Color.fromARGB(255, 96, 59, 181),
@@ -10,7 +11,13 @@ var kDarkColorScheme = ColorScheme.fromSeed(
   brightness: Brightness.dark,
 );
 void main() {
-  runApp(const MainApp());
+  // Set the preferred orientations to portrait mode only
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+  ]).then((fn) {
+    runApp(const MainApp());
+  });
 }
 
 class MainApp extends StatelessWidget {
